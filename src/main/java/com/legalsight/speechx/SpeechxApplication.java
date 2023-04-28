@@ -1,13 +1,13 @@
-package com.springx;
+package com.legalsight.speechx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringxApplication {
+public class SpeechxApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringxApplication.class, args);
-	}
+		SpringApplication.run(SpeechxApplication.class, args);
+	}	
 
 }
