@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sbfeatures.entity.BaseUser;
+import com.sbfeatures.error.BaseUserException;
 import com.sbfeatures.service.BaseUserService;
 
 import jakarta.validation.Valid;
@@ -31,7 +32,7 @@ public class UserController {
 	}
 	
 	@GetMapping("/users/{userId}")
-	public BaseUser getUserById(@PathVariable long userId) {
+	public BaseUser getUserById(@PathVariable long userId) throws BaseUserException {
 		return userService.getUserById(userId);
 	}
 	

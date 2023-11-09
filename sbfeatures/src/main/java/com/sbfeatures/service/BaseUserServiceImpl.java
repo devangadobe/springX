@@ -19,7 +19,7 @@ public class BaseUserServiceImpl implements BaseUserService {
 	@Override
 	public BaseUser getUserById(long userId) throws BaseUserException {
 		Optional<BaseUser> baseuser = Optional.ofNullable(userRepository.getReferenceById(userId));
-		if (!baseuser.isPresent()) {
+		if (!baseuser.isPresent() || baseuser.isEmpty() || null == baseuser.get().userId) {
 			throw new BaseUserException("Base user is not present.");
 		}
 		return baseuser.get();
