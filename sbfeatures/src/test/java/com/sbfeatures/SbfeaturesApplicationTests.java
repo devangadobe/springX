@@ -1,10 +1,10 @@
-package com.legalsight.speechx;
+package com.sbfeatures;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpeechxApplicationTests {
+class SbfeaturesApplicationTests {
 
 	@Test
 	void contextLoads() {
